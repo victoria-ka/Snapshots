@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Nanum+Myeongjo:400,700,800');
+
+/*TYPOGRAPHY*/
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: 'Nanum Myeongjo', sans-serif;
+    text-align: center;
+}
+
+.card-title {
+    font-family: 'Nanum Myeongjo', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Nanum Myeongjo', sans-serif;
+    font-weight: 700;
+}
+
+#favorites {
+    color: #9c27b0;
+    font-family: 'Nanum Myeongjo', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+.btn {
+    font-family: 'Nanum Myeongjo', sans-serif;
+}
+
+/*CARD STYLING*/
+. card .card-image {
+    position: relative;
+}
+
+
+.card img {
+    height: 200px;
+    width:auto;
+    object-fit: cover;
+}
+
+.card img.materialized.active {
+    max-height: none;
+    object-fit: none;
+}
+
+.card-content {
+    height: 275px;
+}
+
+@media only screen 
+  and (min-device-width: 0px) 
+  and (max-device-width: 400px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      
+    .card-content {
+        height: 100px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 400px) 
+  and (max-device-width: 620px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      
+    .card-content {
+        height: 200px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 620px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      
+    .card-content {
+        height: 150px;
+    }
+}
+
+/*LOADING GIF STYLE*/
+#loading {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+#warning {
+    display: none;
+}
